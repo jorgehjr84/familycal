@@ -1,15 +1,19 @@
 <!doctype html>
-<html>
+<html lang="en" ng-app="familyCal">
 <head>
 <title>FamilyCal</title>
 <link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
 </head>
 <body>
 
-<h1>Test HTML Page</h1>
+<header ng-include="views/navbar.html"></header>
 
-<script src="scripts/main.js"></script>
+<div ui-view></div>
+
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-material/angular-material.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>
