@@ -14,3 +14,27 @@ body{
 #hamburger_menu{
   padding-left: 2em;
 }
+#main_content_box{
+  width: 40em;
+  height: 30em;
+  margin-left: 2em;
+  background-color: #B2C7C8;
+  opacity: 0.5;
+}
+#main_content h1{
+  position: relative;
+  margin-top: 1em;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 3em;
+
+}
+#main_content h3{
+  color: white;
+  text-align: center;
+  margin-top: 2em;
+  font-family: arial;
+  font-size: 2em;
+}
