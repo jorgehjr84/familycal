@@ -2,18 +2,23 @@
 <html lang="en" ng-app="familyCal">
 <head>
 <title>FamilyCal</title>
-<link rel="stylesheet" href="styles/main.css">
 <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
+<link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
+  <header ng-include="'views/navbar.html'"></header>
 
-<header ng-include="'views/navbar.html'"></header>
+        <div ui-view></div>
 
-<div ui-view></div>
 
-<script src="../bower_components/jquery/dist/jquery.js"></script>
-<script src="../bower_components/angular/angular.js"></script>
-<script src="../bower_components/angular-material/angular-material.js"></script>
-<script src="scripts/main.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-animate/angular-animate.js" type="text/javascript" ></script>
+  <script src="../bower_components/angular-aria/angular-aria.js" type="text/javascript" ></script>
+  <script src="../bower_components/angular-material/angular-material.js"></script>
+  <script src="scripts/main.js"></script>
+
 </body>
+
 </html>
