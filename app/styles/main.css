@@ -1,0 +1,16 @@
+body{
+  background-image: url("/media/images/familyCal_landing_page.jpeg");
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+.login_button{
+  position: absolute;
+  right: 0;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+#hamburger_menu{
+  padding-left: 2em;
+}
