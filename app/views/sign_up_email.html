@@ -1,16 +1,16 @@
 
-<form>
+<form ng-submit="submitUser()">
   <div class="form-group">
-    <input type="Name" class="form-control" id="formFirstName" placeholder="First Name">
+    <input type="Name" ng-model="newfirstName"class="form-control" id="formFirstName" placeholder="First Name">
   </div>
   <div class="form-group">
-    <input type="Name" class="form-control" id="formLastName" placeholder="Last Name">
+    <input type="Name" ng-model="newlastName"class="form-control" id="formLastName" placeholder="Last Name">
   </div>
   <div class="form-group">
-    <input type="email" class="form-control" id="formEmail" placeholder="Email">
+    <input type="email" ng-model="newemail"class="form-control" id="formEmail" placeholder="Email">
   </div>
   <div class="form-group">
-    <input type="password" class="form-control" id="formPassword" placeholder="Password">
+    <input type="password" ng-model="newpassword" class="form-control" id="formPassword" placeholder="Password">
   </div>
 
   <button type="submit" class="btn btn-success form_button">Submit</button>
