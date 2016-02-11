@@ -1,8 +1,7 @@
-'use strict';
-var familyCal = angular.module('familyCal',['ngMaterial','ngRoute']);
+(function(){
 
-
-familyCal.config(function($routeProvider){
+angular.module('familyCal')
+.config(function($routeProvider){
 $routeProvider
   .when('/',
       {
@@ -25,4 +24,5 @@ $routeProvider
             templateUrl: 'views/sign_up_facebook.html'
         })
       .otherwise({ redirectTo: '/'});
-});
+    });
+})();

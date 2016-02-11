@@ -1,11 +1,11 @@
 (function() {
   'use strict';
-  angular.module('familyCal')
-
+  angular
+  .module('familyCal')
   .controller('SubmitController', SubmitController);
 
 
-function submitController($scope){
+function submitController($firebase,$scope){
 
 var ref = new Firebase('https://familycal.firebaseIO.com/' + '/users');
 
