@@ -15,8 +15,8 @@ body{
   padding-left: 2em;
 }
 #main_content_box{
-  width: 40em;
-  height: 30em;
+  width: 60em;
+  height: 35em;
   margin-left: 2em;
   background-color: rgba(178,199,200,0.5);
 }
@@ -29,6 +29,9 @@ body{
   font-size: 3em;
   position: relative;
   top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255,255,255,1);
 
 }
 #main_content_description{
@@ -38,60 +41,42 @@ body{
   font-family: arial;
   font-size: 2em;
   position: relative;
-  top: 1.75em;
+  width: 90%;
+  top: 4em;
+  margin: auto;
+  color: rgba(255,255,255,1);
 }
 #main_page_signUp_button{
   color:white;
 }
 .sign_up_button{
-  width: 10em;
-  height: 2em;
+  width: 20%;
+  position: absolute;
+  bottom: 7em;
+  left: 21em;
+  text-align: center;
   font-family: arial;
   font-size: 2em;
-  position: absolute;
-  left: 26.5em;
-  bottom: 7em;
-  background-color: rgba(178,199,200,0.9);
-}
-.sign_up_button_link{
   text-decoration: none;
   color: white;
 }
 
 /* Sign Up Page styling */
-.sign_up_email_button{
+#sign_up_options{
   position: relative;
-  left: 12em;
-  top: 1em;
-  margin: 0,auto;
+  margin-top: 10em;
+  text-align: center;
+}
+.sign_up_email_button{
   width: 40%;
   height: 3em;
-  background-color: rgba(178,199,200,0.9);
-  text-decoration: none;
-  font-family: arial;
-  font-size: 2em;
-  color: white;
-}
-.sign_up_email_button a{
-  text-decoration: none;
-
 }
 
 .sign_up_facebook_button{
   position: relative;
-  left: 12em;
-  top: 8em;
-  margin: 0,auto;
+  top: 2em;
   width: 40%;
   height: 3em;
-  background-color: rgba(178,199,200,0.9);
-  font-family: arial;
-  font-size: 2em;
-  color: white;
-}
-.sign_up_facebook_button a{
-  text-decoration: none;
-
 }
 
 /* Sign up With Email Form Styling */
@@ -111,7 +96,7 @@ form{
 #formLastName{
   position: relative;
   left: 42em;
-  bottom: 2.5em;
+  bottom: 3.1em;
   width: 20em;
   height: 2em;
   border-radius:4px;
