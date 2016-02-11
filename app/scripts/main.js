@@ -14,5 +14,15 @@ $routeProvider
             controller: 'MainController',
           templateUrl: 'views/sign_up.html'
       })
+      .when('/sign_up_email',
+       {
+             controller: 'MainController',
+           templateUrl: 'views/sign_up_email.html'
+       })
+       .when('/sign_up_facebook',
+        {
+              controller: 'MainController',
+            templateUrl: 'views/sign_up_facebook.html'
+        })
       .otherwise({ redirectTo: '/'});
 });
