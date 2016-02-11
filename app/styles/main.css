@@ -14,3 +14,46 @@ body{
 #hamburger_menu{
   padding-left: 2em;
 }
+#main_content_box{
+  width: 40em;
+  height: 30em;
+  margin-left: 2em;
+  background-color: rgba(178,199,200,0.5);
+}
+
+#main_content_title{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 3em;
+  position: relative;
+  top: 1em;
+
+}
+#main_content_description{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 2em;
+  position: relative;
+  top: 1.75em;
+}
+#main_page_signUp_button{
+  color:black;
+}
+.sign_up_button{
+  width: 10em;
+  height: 2em;
+  font-family: arial;
+  font-size: 2em;
+  position: absolute;
+  left: 26.5em;
+  bottom: 7em;
+  background-color: rgba(178,199,200,0.9);
+}
+.sign_up_button_link{
+  text-decoration: none;
+  color: black;
+}
