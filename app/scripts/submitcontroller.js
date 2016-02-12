@@ -1,27 +1,10 @@
-(function() {
-  'use strict';
-  angular
-  .module('familyCal')
-  .controller('SubmitController', SubmitController);
 
+  angular.module('familyCal')
+  .controller('SubmitController', submitCtrl);
 
-function submitController($firebase,$scope){
+  function submitCtrl ($firebase, FIREBASE_URL){
 
-var ref = new Firebase('https://familycal.firebaseIO.com/' + '/users');
+    this.user = {};
+      var ref = new Firebase('https://familycal.firebaseIO.com/' + '/users');
 
-    $scope.submitUser = function(){
-
-        $scope.users.$add({
-            firstName: $scope.newfirstName,
-            lastName: $scope.newlastName,
-            email: $scope.newemail,
-            password: $scope.newpassword
-          });
-
-      $scope.newfirstName = "";
-      $scope.newlastName = "";
-      $scope.newemail = "";
-      $scope.newpassword = "";
-    }
 }
-});

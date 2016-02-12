@@ -15,7 +15,8 @@ $routeProvider
       })
       .when('/sign_up_email',
        {
-             controller: 'submitController',
+             controller: 'SubmitController',
+             controllerAs: 'submitCtrl',
            templateUrl: 'views/sign_up_email.html'
        })
        .when('/sign_up_facebook',

@@ -17,6 +17,7 @@
     "jquery": "~2.2.0",
     "angular": "~1.4.9",
     "angular-material": "~1.0.4",
-    "bootstrap": "~3.3.6"
+    "bootstrap": "~3.3.6",
+    "firebase": "~2.4.0"
   }
 }
