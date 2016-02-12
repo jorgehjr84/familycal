@@ -15,14 +15,19 @@ $routeProvider
       })
       .when('/sign_up_email',
        {
-             controller: 'SubmitController',
-             controllerAs: 'submitCtrl',
+             controller: 'AuthController',
+             controllerAs: 'authCtrl',
            templateUrl: 'views/sign_up_email.html'
        })
        .when('/sign_up_facebook',
         {
               controller: 'MainController',
             templateUrl: 'views/sign_up_facebook.html'
+        })
+        .when('/myEvents',
+         {
+               controller: 'MainController',
+             templateUrl: 'views/myEvents.html'
         })
       .otherwise({ redirectTo: '/'});
     });
