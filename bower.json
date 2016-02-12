@@ -18,6 +18,7 @@
     "angular": "~1.4.9",
     "angular-material": "~1.0.4",
     "bootstrap": "~3.3.6",
-    "firebase": "~2.4.0"
+    "firebase": "~2.4.0",
+    "angularfire": "~1.1.3"
   }
 }
