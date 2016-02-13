@@ -1,16 +1,16 @@
 <div ng-controller="SubmitController as submitCtrl">
 <form ng-submit="submitCtrl.register(submitCtrl.user)">
   <div class="form-group">
-    <input type="Name" ng-model="submitCtrl.newUserFirstName"class="form-control" id="formFirstName" placeholder="First Name">
+    <input type="Name" ng-model="submitCtrl.user.firstName"class="form-control" id="formFirstName" placeholder="First Name">
   </div>
   <div class="form-group">
-    <input type="Name" ng-model="submitCtrl.newUserLastName"class="form-control" id="formLastName" placeholder="Last Name">
+    <input type="Name" ng-model="submitCtrl.user.lastName"class="form-control" id="formLastName" placeholder="Last Name">
   </div>
   <div class="form-group">
-    <input type="email" ng-model="submitCtrl.newUserEmail"class="form-control" id="formEmail" placeholder="Email">
+    <input type="email" ng-model="submitCtrl.user.email"class="form-control" id="formEmail" placeholder="Email">
   </div>
   <div class="form-group">
-    <input type="password" ng-model="submitCtrl.newUserPassword" class="form-control" id="formPassword" placeholder="Password">
+    <input type="password" ng-model="submitCtrl.user.password" class="form-control" id="formPassword" placeholder="Password">
   </div>
 
   <button type="submit" class="btn btn-success form_button">Submit</button>

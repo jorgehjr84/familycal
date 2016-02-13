@@ -13,10 +13,10 @@ angular.module('familyCal')
   var firebaseAuthObject = $firebaseAuth(ref);
 
     self.user = {
-      newUserFirstName: '',
-      newUserLastName: '',
-      newUserEmail: '',
-      newUserPassword: ''
+      firstName: self.firstName,
+      lastName: self.lastName,
+      email: self.email,
+      password: self.password
     };
 
     self.register = register;
