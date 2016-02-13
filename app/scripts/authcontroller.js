@@ -1,11 +1,11 @@
 angular.module('familyCal')
-  .controller('SubmitController', submitCtrl);
+  .controller('AuthController', authCtrl);
 
 
 
 // submitCtrl.$inject = ['$firebaseAuth'];
 
-  function submitCtrl ($firebase, FIREBASE_URL, $firebaseArray, $firebaseAuth){
+  function authCtrl ($firebase, FIREBASE_URL, $firebaseArray, $firebaseAuth){
 
 
   var self = this;
@@ -18,6 +18,11 @@ angular.module('familyCal')
       email: self.email,
       password: self.password
     };
+
+    self.firstName = "";
+    self.lastName = "";
+    self.email = "";
+    self.password = "";
 
     self.register = register;
 
@@ -38,9 +43,6 @@ angular.module('familyCal')
     //               password:  self.newUserPassword
     //             });
     //
-    //            self.newUserFirstName = '';
-    //            self.newUserLastName = '';
-    //            self.newUserEmail = '';
-    //            self.newUserPassword = '';
+
     //       }
   };
