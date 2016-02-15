@@ -1,0 +1,18 @@
+<div ng-controller="AuthController as authCtrl">
+<form ng-submit="authCtrl.register(authCtrl.user)">
+  <div class="form-group">
+    <input type="Name" ng-model="authCtrl.user.firstName"class="form-control" id="formFirstName" placeholder="First Name">
+  </div>
+  <div class="form-group">
+    <input type="Name" ng-model="authCtrl.user.lastName"class="form-control" id="formLastName" placeholder="Last Name">
+  </div>
+  <div class="form-group">
+    <input type="email" ng-model="authCtrl.user.email"class="form-control" id="formEmail" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <input type="password" ng-model="authCtrl.user.password" class="form-control" id="formPassword" placeholder="Password">
+  </div>
+
+  <button type="submit" class="btn btn-success form_button">Submit</button>
+</form>
+</div>
