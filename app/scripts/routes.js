@@ -29,6 +29,16 @@ $routeProvider
                controller: 'MainController',
              templateUrl: 'views/myEvents.html'
         })
+        .when('/registerSuccess',
+         {
+               controller: 'MainController',
+             templateUrl: 'views/registerSuccess.html'
+        })
+        .when('/login',
+         {
+               controller: 'MainController',
+             templateUrl: 'views/login.html'
+        })
       .otherwise({ redirectTo: '/'});
     });
 })();
