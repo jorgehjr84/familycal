@@ -31,14 +31,14 @@ $routeProvider
         })
         .when('/registerSuccess',
          {
-               controller: 'authCtrl',
-             templateUrl: 'views/registerSuccess.html'
-        })
-        .when('/login',
-         {
                controller: 'MainController',
-             templateUrl: 'views/login.html'
-        })
+             templateUrl: 'views/registerSuccess.html'
+         })
+         .when('/login',
+          {
+                controller: 'MainController',
+              templateUrl: 'views/login.html'
+          })
       .otherwise({ redirectTo: '/'});
     });
 })();
