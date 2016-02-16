@@ -31,7 +31,7 @@ $routeProvider
         })
         .when('/registerSuccess',
          {
-               controller: 'MainController',
+               controller: 'authCtrl',
              templateUrl: 'views/registerSuccess.html'
         })
         .when('/login',
