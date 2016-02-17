@@ -5,6 +5,6 @@ angular.module('familyCal')
 
 
   function mainCtrl (){
-
+      
 
   };

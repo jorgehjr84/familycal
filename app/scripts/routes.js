@@ -3,11 +3,11 @@
 angular.module('familyCal')
 .config(function($stateProvider, $urlRouterProvider){
 $stateProvider
-    .state('/',
+    .state('home',
       {
         controller: 'MainController',
         controllerAs: 'mainCtrl',
-        url: "/main_page",
+        url: "/",
         templateUrl: 'views/main_page.html'
       })
      .state('/sign_up',
@@ -19,7 +19,6 @@ $stateProvider
       })
       .state('/sign_up_email',
        {
-
          controller: 'AuthController',
          controllerAs: 'authCtrl',
          url: "/sign_up_email",

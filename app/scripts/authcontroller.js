@@ -31,9 +31,6 @@ angular.module('familyCal')
 
     };
 
-
-
-
     // self.users = $firebaseArray(ref);
     //
     //     self.addUser = function(){
