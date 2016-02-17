@@ -1,44 +1,44 @@
 (function(){
 
 angular.module('familyCal')
-.config(function($routeProvider){
-$routeProvider
-  .when('/',
+.config(function($stateProvider, $urlRouterProvider){
+$urlRouterProvider.otherwise('/');
+$stateProvider
+    .state('/',
       {
         controller: 'MainController',
         templateUrl: 'views/main_page.html'
       })
-     .when('/sign_up',
+     .state('/sign_up',
       {
             controller: 'MainController',
           templateUrl: 'views/sign_up.html'
       })
-      .when('/sign_up_email',
+      .state('/sign_up_email',
        {
              controller: 'AuthController',
              controllerAs: 'authCtrl',
            templateUrl: 'views/sign_up_email.html'
        })
-       .when('/sign_up_facebook',
+       .state('/sign_up_facebook',
         {
               controller: 'MainController',
             templateUrl: 'views/sign_up_facebook.html'
         })
-        .when('/myEvents',
+        .state('/myEvents',
          {
                controller: 'MainController',
              templateUrl: 'views/myEvents.html'
         })
-        .when('/registerSuccess',
+        .state('/registerSuccess',
          {
                controller: 'MainController',
              templateUrl: 'views/registerSuccess.html'
          })
-         .when('/login',
+         .state('/login',
           {
                 controller: 'MainController',
               templateUrl: 'views/login.html'
-          })
-      .otherwise({ redirectTo: '/'});
+          });
     });
 })();

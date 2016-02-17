@@ -3,7 +3,6 @@ angular.module('familyCal')
 
 
 
-// submitCtrl.$inject = ['$firebaseAuth'];
 
   function authCtrl ($firebase, FIREBASE_URL, $firebaseArray, $firebaseAuth){
 
@@ -11,7 +10,6 @@ angular.module('familyCal')
   var self = this;
   var ref = new Firebase('https://familycal.firebaseIO.com/');
   var firebaseAuthObject = $firebaseAuth(ref);
-
 
 
     self.user = {
