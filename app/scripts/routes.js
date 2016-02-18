@@ -1,34 +1,58 @@
 (function(){
 
 angular.module('familyCal')
-.config(function($routeProvider){
-$routeProvider
-  .when('/',
+.config(function($stateProvider, $urlRouterProvider){
+$stateProvider
+    .state('home',
       {
         controller: 'MainController',
+        controllerAs: 'mainCtrl',
+        url: "/",
         templateUrl: 'views/main_page.html'
       })
-     .when('/sign_up',
+     .state('/sign_up',
       {
-            controller: 'MainController',
-          templateUrl: 'views/sign_up.html'
+        controller: 'MainController',
+        controllerAs: 'mainCtrl',
+        url: "/sign_up",
+        templateUrl: 'views/sign_up.html'
       })
-      .when('/sign_up_email',
+      .state('/sign_up_email',
        {
-             controller: 'AuthController',
-             controllerAs: 'authCtrl',
-           templateUrl: 'views/sign_up_email.html'
+         controller: 'AuthController',
+         controllerAs: 'authCtrl',
+         url: "/sign_up_email",
+         templateUrl: 'views/sign_up_email.html'
        })
-       .when('/sign_up_facebook',
+       .state('/sign_up_facebook',
         {
-              controller: 'MainController',
-            templateUrl: 'views/sign_up_facebook.html'
+          controller: 'MainController',
+          controllerAs: 'mainCtrl',
+          url: "/sign_up_facebook",
+          templateUrl: 'views/sign_up_facebook.html'
         })
-        .when('/myEvents',
+        .state('/myEvents',
          {
-               controller: 'MainController',
-             templateUrl: 'views/myEvents.html'
+           controller: 'MainController',
+           controllerAs: 'mainCtrl',
+           url: "/myEvents",
+           templateUrl: 'views/myEvents.html'
         })
-      .otherwise({ redirectTo: '/'});
+        .state('registerSuccess',
+         {
+           controller: 'MainController',
+           controllerAs: 'mainCtrl',
+           url: "/registerSuccess",
+           templateUrl: 'views/registerSuccess.html'
+         })
+         .state('/login',
+          {
+            controller: 'MainController',
+            controllerAs: 'mainCtrl',
+            url: "/login",
+            templateUrl: 'views/login.html'
+          });
+          $urlRouterProvider.otherwise('/');
+
     });
 })();

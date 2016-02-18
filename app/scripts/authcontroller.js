@@ -3,14 +3,14 @@ angular.module('familyCal')
 
 
 
-// submitCtrl.$inject = ['$firebaseAuth'];
 
-  function authCtrl ($firebase, FIREBASE_URL, $firebaseArray, $firebaseAuth){
+  function authCtrl ($firebase, FIREBASE_URL, $firebaseArray, $firebaseAuth, $state){
 
 
   var self = this;
   var ref = new Firebase('https://familycal.firebaseIO.com/');
   var firebaseAuthObject = $firebaseAuth(ref);
+
 
     self.user = {
       firstName: self.firstName,
@@ -26,23 +26,11 @@ angular.module('familyCal')
 
     self.register = register;
 
-    function register(user){
-        return firebaseAuthObject.$createUser(user);
-    };
+    function register(user,$stateProvider){
+        $state.go('registerSuccess');
+        return firebaseAuthObject.$createUser(user)
+
+         }
 
 
-
-    // self.users = $firebaseArray(ref);
-    //
-    //     self.addUser = function(){
-    //
-    //             self.users.$add({
-    //               firstName: self.newUserFirstName,
-    //               lastName:  self.newUserLastName,
-    //               email:     self.newUserEmail,
-    //               password:  self.newUserPassword
-    //             });
-    //
-
-    //       }
   };
