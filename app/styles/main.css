@@ -136,3 +136,28 @@ form{
   color: white;
   font-size: 5em;
 }
+
+/* Register Success Styling */
+
+#registerSuccessHeader{
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.registerSuccess_login_button{
+  width: 20%;
+  position: absolute;
+  bottom: 20em;
+  left: 36em;
+  text-align: center;
+  font-family: arial;
+  font-size: 2em;
+  text-decoration: none;
+  color: ;
+}
+
+#login_page_button{
+  position: relative;
+  top: 8em;
+  right: 45em;
+}
