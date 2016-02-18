@@ -29,7 +29,6 @@ angular.module('familyCal')
     function register(user,$stateProvider){
         $state.go('registerSuccess');
         return firebaseAuthObject.$createUser(user)
-
          }
 
 
