@@ -1,0 +1,138 @@
+body{
+  background-image: url("/media/images/familyCal_landing_page.jpeg");
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+.login_button{
+  position: absolute;
+  right: 0;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+#hamburger_menu{
+  padding-left: 2em;
+}
+#main_content_box{
+  width: 60em;
+  height: 35em;
+  margin-left: 2em;
+  background-color: rgba(178,199,200,0.5);
+}
+
+#main_content_title{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 3em;
+  position: relative;
+  top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(255,255,255,1);
+
+}
+#main_content_description{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 2em;
+  position: relative;
+  width: 90%;
+  top: 4em;
+  margin: auto;
+  color: rgba(255,255,255,1);
+}
+#main_page_signUp_button{
+  color:white;
+}
+.sign_up_button{
+  width: 20%;
+  position: absolute;
+  bottom: 7em;
+  left: 21em;
+  text-align: center;
+  font-family: arial;
+  font-size: 2em;
+  text-decoration: none;
+  color: white;
+}
+
+/* Sign Up Page styling */
+#sign_up_options{
+  position: relative;
+  margin-top: 10em;
+  text-align: center;
+}
+.sign_up_email_button{
+  width: 40%;
+  height: 3em;
+}
+
+.sign_up_facebook_button{
+  position: relative;
+  top: 2em;
+  width: 40%;
+  height: 3em;
+}
+
+/* Sign up With Email Form Styling */
+form{
+  position: relative;
+  top: 5em;
+}
+#formFirstName{
+  position: relative;
+  left: 20em;
+  width: 20em;
+  height: 2em;
+  border-radius:4px;
+  border: 0;
+  padding: .25em;
+}
+#formLastName{
+  position: relative;
+  left: 42em;
+  bottom: 3.1em;
+  width: 20em;
+  height: 2em;
+  border-radius:4px;
+  border: 0;
+  padding: 0.25em;
+
+}
+#formEmail{
+  position: relative;
+  left: 20em;
+  bottom: 1.5em;
+  width: 42em;
+  height: 2em;
+  border-radius:4px;
+  border: 0;
+  padding: 0.25em;
+}
+#formPassword{
+  position: relative;
+  left: 20em;
+  bottom: .5em;
+  width: 42em;
+  height: 2em;
+  border-radius:4px;
+  border: 0;
+  padding: 0.25em;
+}
+.form_button{
+  position: relative;
+  left: 20em;
+  top:1em;
+  width: 10em;
+  height: 2em;
+  border-radius:4px;
+  border: 0;
+  background-color: rgb(125,184,94);
+  color: white;
+  font-size: 5em;
+}
