@@ -38,7 +38,7 @@ $stateProvider
            url: "/myEvents",
            templateUrl: 'views/myEvents.html'
         })
-        .state('/registerSuccess',
+        .state('registerSuccess',
          {
            controller: 'MainController',
            controllerAs: 'mainCtrl',
